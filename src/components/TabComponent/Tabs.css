@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../resources/fonts/roboto-v20-latin-700.woff'),
+      url('../../resources/fonts/roboto-v20-latin-700.woff2');
+}
+
+.navbar {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  justify-content: center;
+  list-style: none;
+  padding-bottom: 30px;
+}
+.navbar__item {
+  position: relative;
+  color: #BDBDBD;
+  cursor:pointer;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px;
+  width: 150px;
+  border-bottom: 1px solid #BDBDBD;
+}
+.navbar__item.active {
+  color: #424242;
+  cursor:default;
+}
+.navbar__item.active:before {
+  width: 100%;
+  content: "";
+  position: absolute;
+  background: #0D6CCD;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+}
+
+.section__navbar-bar li {
+  padding: 12px 49px 10px 49px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  margin-bottom: 56px;
+  padding-bottom: 0;
+}
+.navbar__item {
+  line-height: 16px;
+  font-size: 16px;
+}
+
+body.dark .MuiTab-root {
+  color: #888;
+}
+
+body.dark .MuiTab-root.Mui-selected {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 770px) {
+  .navbar {
+    margin-bottom: 32px;
+  }
+  .navbar__item {
+    width: 100%;
+  }
+}

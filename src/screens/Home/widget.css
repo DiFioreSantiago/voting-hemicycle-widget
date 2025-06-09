@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px;
+  height: 100%;
+  justify-content: center;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .widget__title{
+  color: #eee;
+}
+
+body.dark-mode .tooltip {
+  background: #333;
+  color: #eee;
+}
+
+body.dark-mode .legend-container {
+  border-color: #333;
+}
+
+body.dark-mode .legend-summary {
+  color: #ddd;
+}
+
+.no-data-text {
+  text-align: center;
+  color: #b71c1c;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.darkmode-container {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+
+.tabs-container {
+  margin-bottom: 24px;
+}
+
+@font-face {
+  font-family: 'TT Interfaces';
+  src: url('../../resources/fonts/TTInterfaces-Bold.woff'),
+      url('../../resources/fonts/TTInterfaces-Bold.woff2');
+}
+
+@media (min-width: 641px) {
+  .app {
+    padding:0;
+  }
+}

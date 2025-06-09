@@ -1,0 +1,41 @@
+.ios-switch.MuiSwitch-root {
+    width: 42px;
+    height: 26px;
+    padding: 0;
+  }
+  
+  .ios-switch .MuiSwitch-switchBase {
+    padding: 2px;
+  }
+  
+  .ios-switch .MuiSwitch-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    transition: width 0.2s;
+  }
+  
+  .ios-switch .MuiSwitch-track {
+    border-radius: 13px;
+    background-color: #E9E9EA;
+    opacity: 1;
+  }
+  
+  .dark-mode .ios-switch .MuiSwitch-track {
+    background-color: #39393D;
+  }
+  
+  .ios-switch .Mui-checked + .MuiSwitch-track {
+    background-color: #1976d2; /* azul activo */
+  }
+  
+  .ios-switch .MuiSwitch-switchBase.Mui-checked {
+    transform: translateX(16px);
+    color: #fff;
+  }
+
+  .darkmode-label .MuiFormControlLabel-label {
+    margin-left: 8px;
+  }
+  

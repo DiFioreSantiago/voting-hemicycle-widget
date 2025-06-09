@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'TT Interfaces';
+  src: url('../../resources/fonts/TTInterfaces-Bold.woff'),
+       url('../../resources/fonts/TTInterfaces-Bold.woff2');
+}
+
+.widget-title__wrapper {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+  margin-top: 60px;
+}
+@media (min-width: 641px) {
+  .widget-title__wrapper {
+    margin-bottom: 24px;
+  }
+}
+
+.widget__title {
+  color: #212121;
+  font-family: 'TT Interfaces';
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (min-width: 641px) {
+  .widget__title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.section__bar {
+  left: 0;
+  position: relative;
+  width: auto;
+}
+
+.section__bar:before {
+  border-bottom: 3px solid #0D6CCD;
+  content: "";
+  display: block;
+  max-width: 350px;
+  position: absolute;
+  top: -1px;
+  width: 100%;
+}

@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../resources/fonts/roboto-v20-latin-regular.woff'),
+       url('../../resources/fonts/roboto-v20-latin-regular.woff2'),
+       url('../../resources/fonts/roboto-v20-latin-700.woff'),
+       url('../../resources/fonts/roboto-v20-latin-700.woff2');
+}
+
+.legend-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-family: 'TT Interfaces', sans-serif;
+  font-size: 16px;
+  transition: background 0.2s ease-in-out;
+}
+
+.legend-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  font-size: 12px;
+  color: #999;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+body.dark .legend-summary {
+  border-bottom: 1px solid #333;
+}
+
+.legend-details {
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.legend-details.open {
+  justify-items: center;
+  transform: scaleY(1);
+  opacity: 1;
+  overflow: auto;
+}
+.votante-card {
+  width: 120px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+  text-align: center;
+  font-family: 'TT Interfaces', sans-serif;
+}
+
+.votante-circle {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #ccc; 
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.votante-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.votante-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.votante-nombre {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.votante-extra {
+  font-size: 11px;
+  color: #777;
+  word-break: break-word;
+}
+
+body.dark .MuiAccordion-root {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark .MuiAccordionSummary-root {
+  background-color: #1e1e1e;
+}
+
+body.dark .MuiAccordionDetails-root {
+  background-color: #1e1e1e;
+}
+
+@media (min-width: 768px) {
+  .legend-container {
+    align-self: center;
+    width: 600px;
+  }
+}
